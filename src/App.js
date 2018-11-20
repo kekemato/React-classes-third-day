@@ -1,19 +1,14 @@
 import React from 'react'
 
-import Button from './button.js'
+import Route1 from './Route1'
+import Route2 from './Route2'
+import Route3 from './Route3'
 
 const App = (props) => (
     <div>
-
-            <Button
-                label="Click me!"
-                onClickHandler = {() => alert("Click!")}
-            />
-
-            <Button
-                label="Kliknij mnie!"
-                onClickHandler = {() => alert("Kliknąłeś mnie!")}
-            />
+        <Route1 />
+        <Route2 />
+        <Route3 />
     </div>
 )
 
