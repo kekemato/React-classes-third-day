@@ -1,11 +1,16 @@
 import React from 'react'
 
-const name = ['Ala', 'Ola', 'Ela']
+const names = ['Ala', 'Ola', 'Ela']
 
 const App = (props) => (
-    <ul>
-        {name.map(el => <li key={el}> {el}</li>)}
-    </ul>
-  )
+    <div>
+        <div>
+            {names}
+        </div>
+        <ul>
+            {names.map(el => <li key={el}> {el}</li>)}
+        </ul>
+    </div>
+)
 
 export default App
