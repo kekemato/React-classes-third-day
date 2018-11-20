@@ -1,6 +1,7 @@
 import React from 'react'
 
 const names = ['Ala', 'Ola', 'Ela']
+const namesList = names.map(el => <li key={el}> {el}</li>)
 
 const App = (props) => (
     <div>
@@ -8,7 +9,7 @@ const App = (props) => (
             {names}
         </div>
         <ul>
-            {names.map(el => <li key={el}> {el}</li>)}
+            {namesList}
         </ul>
     </div>
 )
