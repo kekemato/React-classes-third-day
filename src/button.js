@@ -1,13 +1,10 @@
 import React from 'react'
 
-const Button = ({label}) =>
-    <button onClick={() => buttonHandler()}>
-        {label}
-    </button>
-
-const buttonHandler = () => {
-    alert("I was clicked!")
-}
-
+const Button = ({ label, onClickHandler }) =>
+    <div>
+        <button onClick={onClickHandler}>
+            {label}
+        </button>
+    </div>
 
 export default Button
