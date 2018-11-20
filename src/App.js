@@ -1,16 +1,10 @@
 import React from 'react'
 
-const names = ['Ala', 'Ola', 'Ela']
-const namesList = names.map(el => <li key={el}> {el}</li>)
+import Button from './button.js'
 
 const App = (props) => (
     <div>
-        <div>
-            {names}
-        </div>
-        <ul>
-            {namesList}
-        </ul>
+        <Button />
     </div>
 )
 
