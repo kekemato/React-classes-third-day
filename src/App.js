@@ -4,7 +4,9 @@ import Button from './button.js'
 
 const App = (props) => (
     <div>
-        <Button />
+        <Button
+        label= "Click me!"
+        />
     </div>
 )
 
